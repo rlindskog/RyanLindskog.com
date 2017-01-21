@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(process.env.PORT || 8000, err => {
-  if (err){ throw err}
+  if (err) throw err
   console.log('listening')
 })

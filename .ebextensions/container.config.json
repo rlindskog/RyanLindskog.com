@@ -5,10 +5,5 @@
         "command": "npm install && npm run build"
       }
     },
-    {
-      "02_run_start": {
-        "command": "npm run start"
-      }
-    }
   ]
 }
