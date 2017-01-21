@@ -1,7 +1,7 @@
 {
-  "name": "react-universally",
+  "name": "RyanLindskog.com",
   "version": "12.0.0",
-  "description": "A starter kit giving you the minimum requirements for a modern universal react application.",
+  "description": "A personal site for Ryan Lindskog",
   "main": "build/server/index.js",
   "engines": {
     "node": ">=6"
@@ -10,9 +10,9 @@
     "preinstall": "node tools/scripts/preinstall",
     "clean": "babel-node tools/scripts/clean",
     "development": "babel-node tools/development",
-    "build": "cross-env NODE_ENV=production babel-node tools/scripts/build",
+    "build": "NODE_ENV=production babel-node tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
-    "start": "cross-env NODE_ENV=production node build/server",
+    "start": "NODE_ENV=production node build/server",
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
@@ -31,20 +31,6 @@
     "express",
     "webpack",
     "styled-components"
-  ],
-  "contributors": [
-    "Alin Porumb",
-    "Benjamin Kniffler <bkniffler@me.com>",
-    "Carson Perrotti <carsonperrotti@gmail.com>",
-    "Christian Glombek <christian.glombek@rwth-aachen.de>",
-    "Christoph Werner",
-    "David Edmondson",
-    "Evgeny Boxer",
-    "Joe Kohlmann <kohlmannj@mac.com>",
-    "Lucian Lature <lucian.lature@gmail.com>",
-    "Steven Enten <steven@enten.fr>",
-    "Sean Matheson <sean@ctrlplusb.com>",
-    "Steven Truesdell <steven@strues.io>"
   ],
   "license": "MIT",
   "bugs": {

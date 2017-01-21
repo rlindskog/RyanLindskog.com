@@ -1,0 +1,14 @@
+{
+  "container_commands": [
+    {
+      "01_run_build": {
+        "command": "npm run build"
+      }
+    },
+    {
+      "02_run_start": {
+        "command": "npm run start"
+      }
+    }
+  ]
+}
