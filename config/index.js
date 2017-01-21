@@ -156,12 +156,12 @@ const config = {
   // @see https://github.com/nfl/react-helmet
   htmlPage: {
     htmlAttributes: { lang: 'en' },
-    titleTemplate: 'React, Universally - %s',
-    defaultTitle: 'React, Universally',
+    titleTemplate: 'Ryan Lindskog - %s',
+    defaultTitle: 'Ryan Lindskog',
     meta: [
       {
         name: 'description',
-        content: 'A starter kit giving you the minimum requirements for a production ready universal react application.',
+        content: 'A personal site for Ryan Lindskog.',
       },
       // Default content encoding.
       { name: 'charset', content: 'utf-8' },
