@@ -12,7 +12,7 @@
     "development": "babel-node tools/development",
     "build": "cross-env NODE_ENV=production babel-node tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
-    "start": "cross-env NODE_ENV=production node build/server",
+    "start": "node ./server.js",
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
