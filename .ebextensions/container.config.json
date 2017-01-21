@@ -1,0 +1,16 @@
+{
+  "container_commands": [
+    {
+      "01_run_build": {
+        "cwd": "/home/ec2-user",
+        "command": "yarn build"
+      }
+    },
+    {
+      "02_run_start": {
+        "cwd": "/home/ec2-user",
+        "command": "yarn start"
+      }
+    }
+  ]
+}
