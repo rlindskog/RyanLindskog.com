@@ -1,2 +1,2 @@
-require('babel-node/register')
+require('babel/register')
 require('./build')
