@@ -12,7 +12,7 @@
     "development": "babel-node tools/development",
     "build": "NODE_ENV=production babel-node ./tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
-    "start": "node ./build/server",
+    "start": "NODE_ENV=production node ./build/server",
     "deploy": "git commit -am 'deploying' && eb deploy",
     "lint": "eslint --fix src",
     "test": "jest",
