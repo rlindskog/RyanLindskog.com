@@ -13,7 +13,7 @@
     "build": "babel-node ./tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
     "start": "node ./build/server",
-    "prestart": "babel-node ./tools/scripts/build",
+    "prestart": "node ./tools/scripts/build-deploy",
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "app-root-dir": "1.0.2",
+    "babel-register": "^6.22.0",
     "code-split-component": "2.0.0-alpha.5",
     "colors": "1.1.2",
     "compression": "1.6.2",
