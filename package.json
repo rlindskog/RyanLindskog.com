@@ -88,6 +88,7 @@
     "chokidar": "1.6.1",
     "cross-env": "3.1.4",
     "css-loader": "0.26.1",
+    "eb-fix-npm": "^1.2.5",
     "enzyme": "2.7.0",
     "enzyme-to-json": "1.4.5",
     "eslint": "3.13.0",
