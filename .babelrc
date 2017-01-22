@@ -7,7 +7,6 @@
 // is supported for each context.
 {
   "presets": [
-    ["env", { "targets": { "node": true } }],
     "stage-3",
     "react"
   ]
