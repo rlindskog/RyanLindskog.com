@@ -52,7 +52,7 @@ app.get('*', reactApplication)
 app.use(...errorHandlers)
 
 // Create an http listener for our express app.
-const listener = app.listen(config.port, config.host, () =>
+const listener = app.listen(process.env.PORT, process.env.HOST, () =>
   console.log(`Server listening on port ${config.port}`),
 )
 
