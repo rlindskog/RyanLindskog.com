@@ -52,8 +52,8 @@ app.get('*', reactApplication);
 app.use(...errorHandlers);
 
 // Create an http listener for our express app.
-const listener = app.listen(8081, '0.0.0.0', () =>
-  console.log(`Server listening on port ${8081}`),
+const listener = app.listen(process.env.PORT || 1337, process.env.HOST || 'localhost', () =>
+  console.log(`Server listening on port ${process.env.PORT}`),
 );
 
 // We export the listener as it will be handy for our development hot reloader,
