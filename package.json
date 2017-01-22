@@ -7,17 +7,8 @@
     "node": ">=6"
   },
   "scripts": {
-    "preinstall": "node tools/scripts/preinstall",
-    "clean": "babel-node tools/scripts/clean",
-    "development": "babel-node tools/development",
-    "build": "NODE_ENV=production babel-node ./tools/scripts/build",
-    "analyze": "babel-node tools/scripts/analyze",
     "start": "NODE_ENV=production node ./build/server",
-    "deploy": "babel-node tools/scripts/deploy",
-    "eb": "git commit -am 'deploying' && eb deploy",
-    "lint": "eslint --fix src",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "eb": "git commit -am 'deploying' && eb deploy"
   },
   "repository": {
     "type": "git",
