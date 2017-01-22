@@ -13,7 +13,7 @@
     "build": "NODE_ENV=production babel-node ./tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
     "start": "NODE_ENV=production node ./build/server",
-    "prestart": "npm run build",
+    "prestart": "npm install -g babel-node && npm run build",
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
