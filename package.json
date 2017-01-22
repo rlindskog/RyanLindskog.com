@@ -13,7 +13,7 @@
     "build": "babel-node ./tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
     "start": "node ./build/server",
-    "prestart": "node ./tools/scripts/build-deploy",
+    "prestart": "babel-node tools/scripts/analyze"  ,
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
