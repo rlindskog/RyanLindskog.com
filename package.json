@@ -13,7 +13,6 @@
     "build": "NODE_ENV=production babel-node ./tools/scripts/build",
     "analyze": "babel-node tools/scripts/analyze",
     "start": "NODE_ENV=production node ./build/server",
-    "prestart": "NODE_ENV=production babel-node ./tools/scripts/build"  ,
     "deploy": "babel-node tools/scripts/deploy",
     "lint": "eslint --fix src",
     "test": "jest",
