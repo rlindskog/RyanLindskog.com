@@ -52,7 +52,7 @@ app.get('*', reactApplication);
 app.use(...errorHandlers);
 
 // Create an http listener for our express app.
-const listener = app.listen(80, '0.0.0.0' () =>
+const listener = app.listen(80, '0.0.0.0', () =>
   console.log(`Server listening on port ${80}`),
 );
 
