@@ -43,7 +43,9 @@ app.use(config.bundles.client.webPath, clientBundle);
 
 // Configure static serving of our "public" root http path static files.
 // Note: these will be served off the root (i.e. '/') of our application.
-app.use(express.static(pathResolve(appRootDir.get(), config.publicAssetsPath)));
+if (process.env.DEVELOPMENT) {
+  app.use(express.static(pathResolve(appRootDir.get(), config.publicAssetsPath)));
+}
 
 // The React application middleware.
 app.get('*', reactApplication);
