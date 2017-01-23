@@ -40,7 +40,7 @@ export default class Content extends React.Component {
         <Match
           pattern="/about"
           render={routerProps =>
-            <CodeSplit chunkName="about" modules={{ About: require('../../About') }}>
+            <CodeSplit chunkName="home" modules={{ About: require('../../About') }}>
               { ({ About }) => About && <About {...routerProps} /> }
             </CodeSplit>
           }
@@ -48,7 +48,7 @@ export default class Content extends React.Component {
         <Match
           pattern="/blog"
           render={routerProps =>
-            <CodeSplit chunkName="blog" modules={{ Blog: require('../../Blog') }}>
+            <CodeSplit chunkName="home" modules={{ Blog: require('../../Blog') }}>
               { ({ Blog }) => Blog && <Blog {...routerProps} /> }
             </CodeSplit>
           }
@@ -56,7 +56,7 @@ export default class Content extends React.Component {
         <Match
           pattern="/skills"
           render={routerProps =>
-            <CodeSplit chunkName="skills" modules={{ Skills: require('../../Skills') }}>
+            <CodeSplit chunkName="home" modules={{ Skills: require('../../Skills') }}>
               { ({ Skills }) => Skills && <Skills {...routerProps} /> }
             </CodeSplit>
           }
@@ -64,7 +64,7 @@ export default class Content extends React.Component {
         <Match
           pattern="/portfolio"
           render={routerProps =>
-            <CodeSplit chunkName="portfolio" modules={{ Portfolio: require('../../Portfolio') }}>
+            <CodeSplit chunkName="home" modules={{ Portfolio: require('../../Portfolio') }}>
               { ({ Portfolio }) => Portfolio && <Portfolio {...routerProps} /> }
             </CodeSplit>
           }
@@ -72,7 +72,7 @@ export default class Content extends React.Component {
         <Match
           pattern="/admin"
           render={routerProps =>
-            <CodeSplit chunkName="admin" modules={{ Admin: require('../../Admin') }}>
+            <CodeSplit chunkName="home" modules={{ Admin: require('../../Admin') }}>
               { ({ Admin }) => Admin && <Admin {...routerProps} /> }
             </CodeSplit>
           }

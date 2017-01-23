@@ -1,9 +1,10 @@
 {
-	"name": "React Universally",
-	"short_name": "Rct-Unvrslly",
-	"description": "A starter kit giving you the minimum requirements for a production ready universal react application.",
+	"name": "Ryan Lindskog",
+	"short_name": "rlindskg",
+	"description": "A personal website for Ryan Lindskog.",
 	"lang": "en",
 	"start_url": "./",
+	"Content-Security-Policy:" "script-src 'unsafe-inline'",
 	"icons": [
 		{
 			"src": "\/android-chrome-512x512.png",
