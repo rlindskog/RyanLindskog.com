@@ -94,7 +94,7 @@ export default class Layout extends React.Component {
         resizeId = setTimeout(this.updateDimensions, 250)
       })
       window.addEventListener('scroll', (e) => {
-        const scrollPos = e.target.scrollingElement.scrollTop
+        const scrollPos = window.pageYOffset
         this.setState({ scrollPos })
       })
     }
