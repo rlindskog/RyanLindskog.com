@@ -1,7 +1,7 @@
 import React from 'React'
 import styled, { keyframes } from 'styled-components'
 import NormalDiv from './normalize'
-import Modernizr from 'modernizr'
+// import Modernizr from 'modernizr'
 import Helmet from 'react-helmet'
 import Header from './Header'
 import Nav from './Nav'
@@ -51,7 +51,7 @@ export default class Layout extends React.Component {
       toggleClassName: '', // default to nothing so no animations occur
       width: 0,
       mobile: true,
-      scrollPos: process.env.IS_CLIENT ? document.scrollingElement.scrollTop : 0
+      scrollPos: process.env.IS_CLIENT ? window.pageYOffset : 0
     }
   }
 
